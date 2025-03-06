@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f1f8ff);
+    color: #2c3e50;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 35px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    outline: 0;
+    border: 0;
+    height: 45px;
+    width: 250px;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #6a11cb;
+    margin-right: 18px;
+}
+
+input:focus {
+    border: 2px solid #6a11cb;
+}
+
+button {
+    background: linear-gradient(45deg, #3498db, #6a11cb);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2980b9, #4b0082);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 28px;
+    color: #34495e;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.output {
+    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-height: 400px;
+    overflow-y: auto;
+    border-left: 6px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 25px;
+    margin-top: 15px;
+    color: #34495e;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.output > ol {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
