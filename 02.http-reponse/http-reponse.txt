@@ -1,0 +1,27 @@
+# HTTP Response Example
+# A response is sent from the server to the client after receiving a request.
+# It includes a status line, response headers, and an optional response body.
+
+HTTP/1.1 200 OK  # HTTP Version: 1.1, Status Code: 200 (Success), Status Message: OK
+
+# Response headers provide metadata about the response.
+Server: Apache/2.4.41 (Ubuntu)  # Identifies the server software handling the request.
+Content-Type: text/html; charset=UTF-8  # Specifies the type of content in the response and character encoding.
+Content-Length: 1256  # The size of the response body in bytes.
+Connection: close  # Indicates that the connection will be closed after the response is sent.
+
+# Response body contains the actual content returned by the server.
+<html>
+<head><title>Welcome</title></head>
+<body>
+#JSON Response Body
+{
+  "status": "success",
+  "data": {
+    "id": 123,
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  }
+}
+</body>
+</html>

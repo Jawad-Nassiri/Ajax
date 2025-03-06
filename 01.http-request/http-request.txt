@@ -1,0 +1,23 @@
+# HTTP GET Request Example
+# The GET method is used to request data from the server without modifying it.
+# The request line includes the method, the requested resource path, and the HTTP version.
+GET /index.html HTTP/1.1  # Method: GET, Path: /index.html, HTTP Version: 1.1
+
+# Headers provide additional information about the request.
+Host: www.example.com  # The domain name of the server that the request is being sent to.
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)  # Identifies the client making the request (browser, OS, etc.).
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9  # Specifies the MIME types the client can accept in the response.
+Accept-Language: en-US,en;q=0.5  # Specifies the preferred languages for the response, with priority.
+Connection: keep-alive  # Instructs the server to keep the connection open for multiple requests to improve performance.
+
+# HTTP POST Request Example
+# The POST method is used to send data to the server, such as form data.
+POST /login HTTP/1.1  # Method: POST, Path: /login, HTTP Version: 1.1
+
+# Headers provide details about the request body and content format.
+Host: www.example.com  # The domain name of the server receiving the request.
+Content-Type: application/x-www-form-urlencoded  # Specifies the format of the request body data (URL-encoded form data in this case).
+Content-Length: 27  # Specifies the length of the request body in bytes, helping the server determine how much data to read.
+
+# Request body contains the actual data being sent to the server.
+username=johndoe&password=1234  # The form data (username and password) sent in the request body.
