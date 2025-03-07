@@ -38,3 +38,4 @@ function getData(url) {
         xhr.send();
     })
 }
+
